@@ -10,5 +10,6 @@ class Logger {
     }
   }
   
+  
   module.exports = new Logger('DEFAULT') // Nuevo objeto instanciado
   module.exports.Logger = Logger // Clase
