@@ -8,6 +8,13 @@ const woopa_obj={
     color: "pink"
 }
 
+/*
+como crar una clase
+como instanciar un objeto de una clase
+instanciar objetos d euna misma clase
+como agregar el constructor para guardar atributos al crear
+crear metodos
+*/
 //crear una clase
 class Ajolonauta{
     constructor(name,mission,age,color){
@@ -16,6 +23,11 @@ class Ajolonauta{
     this.age=age
     this.color=color
         }
+
+    sayHallo(){
+       // return "hola"
+        return `${this.name} dice hola`
+    }
 
 }
 
@@ -35,5 +47,9 @@ console.log(woopa_obj_js) */
 const woopa=new Ajolonauta("Woopa","Noe JS",18,"Azul")  // instanciar un objeto , objeto instanciado de una clase */
 console.log(woopa)
 
+console.log(woopa.sayHallo())
+
 const wooper=new Ajolonauta("wooper","java",10,"gris")
-console.log(wooper)
+console.log(wooper.name)
+
+
