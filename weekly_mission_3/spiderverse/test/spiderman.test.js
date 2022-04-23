@@ -25,6 +25,7 @@ describe("Unit Tests for Spiderman class", () => {
 	});
 
 	test('2) Use the method getInfo()', () => {
+		//esto ya viene en la estructura que es el app/spiderman.js y se manda a llamar la funcion
 		const tomHolland = new Spiderman("Spiderman Marvel", 25, "Tom Holland", 5, "Marvel")
 		expect(tomHolland.getInfo()).toBe("Hey, I'm Tom Holland from Marvel studio")
 	});
