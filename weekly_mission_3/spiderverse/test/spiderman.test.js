@@ -1,3 +1,12 @@
+
+///prueba de unidad vacia
+/* describe("Test Suite Dummy Description", () => {
+	test('Case 1 Dummy', () => {
+	  const resultOfSomething = 1 + 2
+	  expect(resultOfSomething).toBe(18);
+	});
+  }) */
+
 const Spiderman = require('./../app/spiderman')
 
 describe("Unit Tests for Spiderman class", () => {
@@ -19,4 +28,5 @@ describe("Unit Tests for Spiderman class", () => {
 		const tomHolland = new Spiderman("Spiderman Marvel", 25, "Tom Holland", 5, "Marvel")
 		expect(tomHolland.getInfo()).toBe("Hey, I'm Tom Holland from Marvel studio")
 	});
-})
+}) 
+
