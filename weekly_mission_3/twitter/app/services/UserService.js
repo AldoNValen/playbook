@@ -17,10 +17,10 @@ class UserService {
     user.setUsername = username
   }
 
- /*  static getAllUsernames(users){
+  static getAllUsernames(users){
     const usersUsernames = users.map( user => user.username)
     return usersUsernames
-  } */
+  }
  
 } 
 
