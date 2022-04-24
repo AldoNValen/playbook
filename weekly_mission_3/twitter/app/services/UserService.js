@@ -5,7 +5,7 @@ class UserService {
     return new User(id, username, name, "Sin bio")
   }
 
-  static getInfo(user){
+  /* static getInfo(user){
     return Object.values(user)
   }
 
@@ -21,7 +21,7 @@ class UserService {
     const usersUsernames = users.map( user => user.username)
     return usersUsernames
   }
-
+ */
 }
 
 module.exports = UserService

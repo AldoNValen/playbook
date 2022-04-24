@@ -2,15 +2,16 @@ const UserService = require('./../../app/services/UserService')
 
 describe("Tests for UserService", () => {
 
-  test("1. Create a new user using the UserService", () => {
-    const user = UserService.create(1, "carlogilmar", "Carlo")
-    expect(user.username).toBe("carlogilmar")
-    expect(user.name).toBe("Carlo")
+  //PUNTO 4 , REUQERIMIENTO 1
+ test("1. Create a new user using the UserService", () => {
+    const user = UserService.create(1, "AldoVal", "Aldo")
+    expect(user.username).toBe("AldoVal")
+    expect(user.name).toBe("Aldo")
     expect(user.id).toBe(1)
     expect(user.bio).not.toBeUndefined()
-  })
+  }) 
 
-  test("2. Get all user data in a list", () => {
+ /*  test("2. Get all user data in a list", () => {
     const user = UserService.create(1, "carlogilmar", "Carlo")
     const userInfoInList = UserService.getInfo(user)
     expect(userInfoInList[0]).toBe(1)
@@ -33,6 +34,6 @@ describe("Tests for UserService", () => {
     expect(usernames).toContain("carlogilmar1")
     expect(usernames).toContain("carlogilmar2")
     expect(usernames).toContain("carlogilmar3")
-  })
+  })  */
 
 })
