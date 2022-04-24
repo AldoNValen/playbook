@@ -1,7 +1,7 @@
 const UserView = require('./../../app/views/UserView')
 
 describe("Tests for UserView", () => {
-  //punto 6, requerimiento 1
+  //punto 5, requerimiento 1
    test("Return an error object when try to create a new user with an null payload", () => {
     const payload = null
     const result = UserView.createUser(payload)
@@ -12,7 +12,7 @@ describe("Tests for UserView", () => {
   })
  
 
-  //punto 6, requerimiento 2
+  //punto 5, requerimiento 2
     test("Return an error object when try to create a new user with a payload with invalid properties", () => {
     const payload = {username: null, name: 12, id: "id"}
     const result = UserView.createUser(payload)
@@ -21,14 +21,14 @@ describe("Tests for UserView", () => {
     expect(result.error).toMatch(/necesitan tener un valor válido/)
   })  
 
-   //punto 6, requerimiento 3
+   //punto 5, requerimiento 3
    test("Return an error object when try to create a new user with a payload with missing properties", () => {
     const payload = {username: "Username"}
     const result = UserView.createUser(payload)
     expect(result.error).toMatch(/necesitan tener un valor válido/)
   }) 
 
-   //punto 6, requerimiento 4
+   //punto 5, requerimiento 4
    test("Create a user by a given valid payload", () => {
     const payload = {username: "AldoVal", id: 1, name: "Aldo"}
     const result = UserView.createUser(payload)
