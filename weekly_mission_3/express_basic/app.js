@@ -10,12 +10,17 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+// Con esto inicializamos esta app
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+ })
+
 // Respondiendo texto
 // localhost:3000/launchx
-app.get('/launchx', (req, res) => {
+ app.get('/launchx', (req, res) => {
     res.send('Bievenidos a launchx')
 })
-
+ 
 // Regresando un objeto
 // localhost:3000/explorersInNode
 app.get('/explorersInNode', (req, res) => {
@@ -31,7 +36,4 @@ app.get('/explorers/:explorerName', (req, res) => {
 })
 
 
-// Con esto inicializamos esta app
-app.listen(port, () => {
- console.log(`Example app listening on port ${port}`)
-})
+
