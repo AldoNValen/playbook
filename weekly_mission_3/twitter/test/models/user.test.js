@@ -34,14 +34,25 @@ describe("Unit Tests for User class", () => {
     expect(user.lastUpdated).not.toBeUndefined()
 	});  */
 
-  //test del  punto 3, requerimiento 3
+ /*  //test del  punto 3, requerimiento 3
   	test('Add getters', () => {
     const user = new User(1, "AldoVal", "Aldo", "Bio")	
 		expect(user.getUsername).toBe("AldoVal")
 		expect(user.getBio).toBe("Bio")
-  /*   expect(user.getDateCreated).not.toBeUndefined()
-    expect(user.getLastUpdated).not.toBeUndefined() */
-	});  
+    expect(user.getDateCreated).not.toBeUndefined()
+    expect(user.getLastUpdated).not.toBeUndefined()
+	});   */
+
+//test del  punto 3, requerimiento 4
+test('Add setters',()=>{
+  const user=new User(1,"AldoVal","Aldo","Bio")
+  user.setUsername="Aldiux"
+  expect(user.username).toBe("Aldiux")
+  
+  //manda sun parametro y te debe regresar algo...
+  user.setBio="New bio"
+  expect(user.bio).toBe("New bio")
+})
 
   // *****************************************************************++
 /* 	test('2) Create an User object', () => {

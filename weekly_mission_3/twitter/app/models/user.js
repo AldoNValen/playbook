@@ -8,7 +8,7 @@ class User {
       this.lastUpdated = new Date()
     }
   
-    get getUsername(){
+     get getUsername(){
       return this.username
     }
   
@@ -22,15 +22,15 @@ class User {
   
     get getLastUpdated(){
       return this.lastUpdated
-    }
+    } 
   
-    /* set setUsername(newUsername){
+    set setUsername(newUsername){
       this.username = newUsername
     }
   
     set setBio(newBio){
       this.bio = newBio
-    } */
+    }
   }
   
   module.exports = User
